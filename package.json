@@ -4,14 +4,19 @@
   "description": "a backend at chai or code channel",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
     "nodemon": "^3.1.14",
     "prettier": "^3.9.10"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.7",
+    "express": "^5.3.0",
+    "mongoose": "^9.11.1"
   }
 }
